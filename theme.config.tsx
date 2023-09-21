@@ -2,17 +2,19 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: <b>Lume</b>,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: 'https://github.com/luminous-devs/lume',
   },
-  chat: {
-    link: 'https://discord.com',
-  },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: 'https://github.com/luminous-devs/docs',
   footer: {
-    text: 'Nextra Docs Template',
+    text: 'Lume Documentation',
   },
+  useNextSeoProps() {
+    return {
+      titleTemplate: '%s – Lume'
+    }
+  }
 }
 
 export default config

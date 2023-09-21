@@ -1,11 +1,50 @@
 # Introduction
+
+## Lume
  
-Welcome to Nextra! This is a basic docs template. You can use it as a starting point for your own project :)
+Lume is an easy to use app built on top of the Nostr protocol. Lume helps you to interface the Nostr protocol to access a truly decentralized social media
 
-## What is Nextra?
+![Lume Client](/lume.png)
 
-A **simple**, **powerful** and **flexible** site generation framework with everything you love from Next.js.
+A client in Nostr is just the app that you use to access and interact with the protocol.
+Because the Nostr protocol is very simple and flexible, different clients have approached the protocol in different ways. Lume is a cross-platform desktop client that enables you to get started with Nostr with ease.
 
-## Documentation
+Lume is a free and open source sofwtare and is availabe on [GitHub](https://github.com/luminous-devs/lume)
 
-The documentation is available at [https://nextra.site](https://nextra.site).
+## What is Nostr?
+
+Nostr is a protocol, designed for simplicity, that aims to create a censorship-resistant global social network. Nostr is designed to be -
+
+### Simple
+The protocol is based on very simple & flexible event objects (which are passed around as plain JSON) and uses standard elliptic-curve cryptography for keys and signing. The only supported transport is websockets connections from clients to relays. This makes it easy to write clients and relays and promotes software diversity.
+
+### Resilient
+Because Nostr doesn't rely on a small number of trusted servers for moving or storing data, it's very resilient. The protocol assumes that relays will disappear and allows users to connect and publish to an arbitrary number of relays that they can change over time.
+
+### Verifiable
+Because Nostr accounts are based on public-key cryptography it's easy to verify messages were really sent by the user in question.
+
+Like HTTP or TCP-IP, Nostr is a protocol; an open standard upon which anyone can build. Nostr is not an app or service that you sign up for.
+
+
+
+## Nostr protocol
+
+Nostr has two main components: clients and relays
+
+Client: Clients are used interact with the Nostr protocol. Lume is one such client.
+
+Relays: Relays are like backend servers for Nostr. Clients send events to Relays which may or may not store these events. A client can interact with multiple relays.
+
+Read more about [Clients](https://nostr.com/clients) and [Relays](https://nostr.com/relays)
+
+## Why we need Nostr
+
+Social media has developed into a key way information flows around the world. Unfortunately, our current social media systems are broken:
+1. Uses your attention to sell ads
+2. Uses bizarre techniques to keep you addicted (refer to point 1)
+3. Decides what content to show you based on a secret algorithm that you can't inspect or change
+4. Has complete control over who can participate and who is censored
+5. Is overrun with spam and bots
+
+You can read more about Nostr on [nostr.com](https://nostr.com)

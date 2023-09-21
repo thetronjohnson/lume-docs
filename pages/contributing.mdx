@@ -1,0 +1,41 @@
+import { Steps } from 'nextra/components'
+
+# Contributing
+
+Lume is a free and open source Nostr client. You can contribute to Lume by visiting our [GitHub repository](https://github.com/luminous-devs/lume)
+
+Lume uses TypeScript on the frontend and Rust for the backend
+
+## Code contributions
+
+<Steps>
+### Install Prerequisites
+* [Bun](https://bun.sh/docs/installation)
+* [Rust](https://www.rust-lang.org/)
+* [Tauri](https://tauri.app/v1/guides/getting-started/prerequisites/)
+ 
+### Cloning the repository
+
+```sh
+git clone https://github.com/luminous-devs/lume.git && cd lume
+```
+
+### Installing the packages
+
+```sh
+bun install
+
+```
+
+### Run development build
+
+```sh
+bun tauri dev
+```
+
+### Generate production build
+
+```sh
+bun tauri build
+```
+</Steps>
